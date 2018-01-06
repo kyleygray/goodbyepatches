@@ -1,0 +1,73 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+
+body {
+  background-image: url("../img/space.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.board {
+  position: relative;
+  z-index: 10;
+  height: 100%;
+  width: auto;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.board img {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+  overflow: hidden;
+}
+
+#countdown {
+  font-family: "Sumana";
+  font-weight: 700;
+  text-shadow: -7px 6px 5px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  z-index: 11;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 30%;
+  font-size: 9vmin;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+.backdrop {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.backdrop img {
+  position: absolute;
+  max-height: 100%;
+  width: auto;
+  overflow: hidden;
+}
+
+.backdrop img:nth-child(1) {
+  left: 0;
+}
+
+.backdrop img:nth-child(2) {
+  right: 0;
+}
