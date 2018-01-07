@@ -29,6 +29,7 @@ $("#board").click(function(e) {
   console.log("clicked");
 
   var voice = new Audio('img/patches.ogg');
+  voice.volume = 0.6;
   voice.play();
 
   $("#clickhere").remove();
@@ -49,6 +50,7 @@ $("#board").click(function(e) {
     $(patches).remove();
     var boom = new Audio('img/explosion.ogg');
     boom.play();
+    boom.volume = 0.4;
     var explosion = createExplosion();
     explosion.classList.add("explosion");
     $("#hook").append(explosion);
