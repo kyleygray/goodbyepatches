@@ -4,12 +4,19 @@
   <meta name="viewport" content="width=device-width">
   <link href="https://fonts.googleapis.com/css?family=Sumana:400,700" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="src/style.css">
-  <script type="text/javascript" src="src/function.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
   <div class="container">
-    <div class="board">
+    <div id="board">
+      <div class="message">Approximate time until MSOG leaves standard:</div>
       <div id="countdown"></div>
+      <div id="hook">
+        <!-- <div class="patches">
+          <img src="img/patches.png" alt="">
+        </div> -->
+      </div>
+      <div id="clickhere">Try clicking here...</div>
       <img src="img/board.png" alt="board">
     </div>
     <div class="backdrop">
@@ -17,5 +24,6 @@
       <img src="img/jade.png" alt="jade">
     </div>
   </div>
+  <script type="text/javascript" src="src/function.js"></script>
 </body>
 </html>

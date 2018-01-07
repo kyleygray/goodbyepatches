@@ -16,7 +16,7 @@ body {
   height: 100%;
 }
 
-.board {
+#board {
   position: relative;
   z-index: 10;
   height: 100%;
@@ -25,7 +25,7 @@ body {
   overflow: hidden;
 }
 
-.board img {
+#board > img {
   position: absolute;
   transform: translateX(-50%);
   left: 50%;
@@ -35,7 +35,61 @@ body {
   overflow: hidden;
 }
 
-#countdown {
+#clickhere {
+  font-family: "Sumana";
+  font-size: 3vmin;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 5vmin;
+  color: rgba(255,255,255,0.5);
+  display: block;
+  position: absolute;
+  z-index: 13;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: 23%;
+  max-width: 90vmin;
+  width: 100%;
+  height: 20vh;
+  background-color: rgba(0,0,0,0.1);
+  pointer-events: none;
+  animation: fadein 3s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadein {
+  0% {opacity: 0;}
+  70% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.patches {
+  display: block;
+  position: fixed;
+  z-index: 12;
+  transform: translateX(-50%) translateY(-50%);
+  height: 18vh;
+  left: 120%;
+  top: 75%;
+}
+
+.patches > img {
+  height: 100%;
+  width: auto;
+}
+
+.explosion {
+  display: block;
+  position: fixed;
+  z-index: 12;
+  transform: translateX(-50%) translateY(-50%);
+  height: 18vh;
+  left: 51%;
+  top: 17%;
+}
+
+#countdown, .message {
   font-family: "Sumana";
   font-weight: 700;
   text-shadow: -7px 6px 5px rgba(0, 0, 0, 0.3);
@@ -50,7 +104,12 @@ body {
   text-align: center;
 }
 
+.message {
+  font-size: 3vmin;
+}
+
 .backdrop {
+  overflow: hidden;
   position: absolute;
   top: 0;
   height: 100%;
