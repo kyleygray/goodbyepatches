@@ -38,6 +38,7 @@ $("#board").click(function(e) {
   var y = e.pageY;
 
   var patches = createPatches();
+  // $(patches).on('dragstart', function(e){e.preventDefault();});
   $("#hook").append(patches);
   $(patches).animate({
     left: x + "px",
