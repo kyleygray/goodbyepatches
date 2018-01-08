@@ -99,6 +99,7 @@ body * {
   height: 18vh;
   left: 51%;
   top: 17%;
+  pointer-events: none;
 }
 
 #countdown, .message {
